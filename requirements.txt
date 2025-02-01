@@ -1,7 +1,7 @@
 python-telegram-bot==21.9
 chardet==5.2.0
 baidu-aip==4.16.13
-pillow==11.0.0
+pillow==11.1.0
 pandas==2.2.3
 matplotlib==3.10.0
 fuzzywuzzy==0.18.0
