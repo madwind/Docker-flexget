@@ -1,4 +1,4 @@
-FROM docker.io/python:3.11-alpine3.20
+FROM docker.io/python:3.13-alpine3.20
 COPY requirements.txt /tmp
 RUN set -eux  && \
     apk add --no-cache --upgrade \
@@ -12,7 +12,7 @@ RUN set -eux  && \
 	\) -exec rm -rf '{}' +
 COPY root /root-dir
 
-FROM docker.io/python:3.11-alpine3.20
+FROM docker.io/python:3.13-alpine3.20
 ENV PYTHONUNBUFFERED=1
 COPY --from=0 /root-dir /
 RUN set -eux  && \
